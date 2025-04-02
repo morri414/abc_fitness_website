@@ -9,12 +9,12 @@
 body {
     font-family: Calibri, sans-serif;
     font-size: 16px;
-    color: #C5C3C3;
-    background-color: #FCFCFC;
+    color: #17253F; /* Brisk Blue for strong text contrast */
+    background-color: #FCFCFC; /* Endurance White */
     line-height: 1.6;
 }
 
-/* Typography Levels */
+/* Typography */
 h1 {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 40px;
@@ -60,9 +60,9 @@ h3 {
     font-size: 11px;
 }
 
-/* ========== Header & Nav ========== */
+/* ========== Header & Navigation ========== */
 header {
-    background-color: #17253F;
+    background-color: #2343BD; /* Intensity Indigo */
     color: white;
     padding: 20px;
     text-align: center;
@@ -74,7 +74,8 @@ nav ul {
     justify-content: center;
     gap: 25px;
     padding: 10px 0;
-    background-color: #2343BD;
+    margin: 0;
+    background-color: #17253F; /* Brisk Blue */
 }
 
 nav ul li a {
@@ -93,7 +94,7 @@ main {
 }
 
 section {
-    background-color: #FCFCFC;
+    background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -105,7 +106,7 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    background-color: #91B9D2;
+    background-color: #91B9D2; /* Aqua Pulse */
     margin-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -114,7 +115,7 @@ section {
 button,
 form button {
     padding: 10px 20px;
-    background-color: #DEF479;
+    background-color: #DEF479; /* Lime Lift */
     color: #17253F;
     border: none;
     border-radius: 5px;
@@ -146,18 +147,18 @@ form textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    color: #C5C3C3;
+    color: #17253F;
     background-color: #FCFCFC;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-    color: #C5C3C3;
+    color: #888;
 }
 
 /* ========== Footer ========== */
 footer {
-    background-color: #17253F;
+    background-color: #17253F; /* Brisk Blue */
     color: white;
     text-align: center;
     padding: 20px;
