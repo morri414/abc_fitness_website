@@ -1,32 +1,80 @@
-/* General page setup */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+/* ========== Base Reset ========== */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
-/* Header styles */
+/* ========== Body & Typography ========== */
+body {
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    color: #C5C3C3;
+    background-color: #FCFCFC;
+    line-height: 1.6;
+}
+
+/* Typography Levels */
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #17253F;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #17253F;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: Impact, sans-serif;
+    font-size: 25px;
+    color: #17253F;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 15px;
+}
+
+.body-large {
+    font-size: 20px;
+}
+
+.body-strong {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.caption {
+    font-family: Comfortaa, cursive, sans-serif;
+    font-size: 11px;
+}
+
+/* ========== Header & Nav ========== */
 header {
-    background-color: #013C4A; /* Deep teal */
+    background-color: #17253F;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-/* Navigation styles */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
-    background-color: #49B8A5; /* Accent green */
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 25px;
+    padding: 10px 0;
+    background-color: #2343BD;
 }
 
 nav ul li a {
@@ -39,48 +87,44 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Section styles */
+/* ========== Main Content ========== */
 main {
     padding: 20px;
 }
 
 section {
-    margin: 20px 0;
-    background-color: #ffffff;
+    background-color: #FCFCFC;
     padding: 20px;
     border-radius: 8px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #013C4A;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Form styles */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+/* ========== Cards ========== */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #91B9D2;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* ========== Buttons ========== */
+button,
 form button {
     padding: 10px 20px;
-    background-color: #E7A827; /* Yellow button */
-    color: #000;
+    background-color: #DEF479;
+    color: #17253F;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
 }
 
+button:hover,
 form button:hover {
-    background-color: #d09b1f;
+    background-color: #cbd965;
 }
 
 button.clear {
@@ -92,13 +136,36 @@ button.clear:hover {
     background-color: #555;
 }
 
-/* Grid of cards (for instructors or classes) */
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: #fafafa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+/* ========== Forms ========== */
+form input,
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #C5C3C3;
+    background-color: #FCFCFC;
 }
 
+form input::placeholder,
+form textarea::placeholder {
+    color: #C5C3C3;
+}
+
+/* ========== Footer ========== */
+footer {
+    background-color: #17253F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer form input[type="email"] {
+    max-width: 300px;
+    width: 100%;
+    padding: 8px;
+    margin-right: 10px;
+}
