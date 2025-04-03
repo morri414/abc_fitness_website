@@ -312,22 +312,24 @@ section {
     }
 }
 
+
+/* Mobile-friendly fix for service sections */
 @media (max-width: 768px) {
-  .service-container {
+  .service {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
+    gap: 1em;
   }
 
-  .service-container img {
-    width: 100%;
+  .service img {
+    max-width: 100%;
     height: auto;
-    margin: 1em 0;
   }
 
-  .service-container p {
-    margin: 0;
+  .service p {
+    text-align: left;
     padding: 0 1em;
   }
 }
