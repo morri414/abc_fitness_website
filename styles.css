@@ -1,3 +1,14 @@
+/* === LOGO NEXT TO TITLE === */
+h1::before {
+    content: '';
+    background: url("images/Client2_LogoPalette3_2343BD.png") no-repeat center/contain;
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
 /* ========== Base Reset ========== */
 * {
     box-sizing: border-box;
@@ -312,50 +323,49 @@ section {
     }
 }
 
-
 /* Mobile-friendly fix for service sections */
 @media (max-width: 768px) {
-  .service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    gap: 1em;
-  }
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        gap: 1em;
+    }
 
-  .service img {
-    max-width: 100%;
-    height: auto;
-  }
+    .service img {
+        max-width: 100%;
+        height: auto;
+    }
 
-  .service p {
-    text-align: left;
-    padding: 0 1em;
-  }
+    .service p {
+        text-align: left;
+        padding: 0 1em;
+    }
 }
 
 .service-block {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 2em;
-  flex-direction: row-reverse;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    flex-direction: row-reverse;
 }
 
 @media (max-width: 768px) {
-  .service-block {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
+    .service-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
 
-  .service-block img {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-  }
+    .service-block img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
 
-  .service-block p {
-    padding: 0 1em;
-  }
+    .service-block p {
+        padding: 0 1em;
+    }
 }
