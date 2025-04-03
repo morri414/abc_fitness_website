@@ -1,90 +1,103 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
             About Us - ABC Fitness Studio
 </title>
-<link href="css/theme.css" rel="stylesheet" type="text/css"/>
-<link href="styles.css" rel="stylesheet"/>
-</head>
-<body>
-<header>
-<h1>
+        <link href="css/theme.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>
     ABC Fitness Studio </h1>
-<nav>
-<ul>
-<li><a href="index.html">
+            <nav>
+                <ul>
+                    <li><a href="index.html">
        Home </a>
-</li>
-<li><a href="about.html">
+                    </li>
+                    <li><a href="about.html">
        About Us </a>
-</li>
-<li><a href="instructors.html">
+                    </li>
+                    <li><a href="instructors.html">
        Instructors </a>
-</li>
-<li><a href="classes.html">
+                    </li>
+                    <li><a href="classes.html">
        Classes </a>
-</li>
-<li><a href="shop.html">
+                    </li>
+                    <li><a href="shop.html">
        Shop </a>
-</li>
-</ul>
-</nav>
-</header>
-<main>
-<h2>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>
     Our Story </h2>
-<p>
+            <p>
     ABC Fitness Studio began with a simple vision — to create a welcoming, inclusive space where individuals of all fitness levels could grow stronger, healthier, and more connected. Born from a passion for wellness, the studio has evolved into a local cornerstone for physical and mental balance. From early morning yoga flows to energizing evening kickboxing classes, our mission has always been to empower our community to lead vibrant, active lives. </p>
-<h2>
+            <h2>
     Our Mission </h2>
-<p>
+            <p>
     Our mission is to inspire holistic wellness by offering expertly guided fitness classes and top-quality training equipment in an environment that promotes balance, harmony, and growth. We believe that health is a journey, and our team is here to support yours every step of the way — with encouragement, motivation, and a genuine commitment to your well-being. </p>
-<section class="contact">
-<h2>Contact Us</h2>
-<p>If you have any questions, feedback, or just want to say hello, feel free to reach out!</p>
-<form>
-<div class="form-group">
-<label for="name">Name:</label>
-<input id="name" name="name" placeholder="Your name" type="text"/>
-</div>
-<div class="form-group">
-<label for="email">Email:</label>
-<input id="email" name="email" placeholder="Your email" type="email"/>
-</div>
-<div class="form-group">
-<label for="message">Message:</label>
-<textarea id="message" name="message" placeholder="Your message"></textarea>
-</div>
-<button type="submit">Send Message</button>
-</form>
-<div class="social-links">
-<p>Follow us on social media:</p>
-<div class="social-icons">
-<a href="#">📘 Facebook</a>
-<a href="#">📸 Instagram</a>
-<a href="#">❌ X (Twitter)</a>
-<a href="#">🎵 TikTok</a>
-</div>
-</div>
-</section>
-</main>
-<footer>
-<p>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feedback, or just want to say hello, feel free to reach out!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <section class="hours">
+                    <h2>Hours of Operation</h2>
+                    <ul class="hours-list">
+                        <li>
+                            <strong>Monday–Friday:</strong> 6 a.m. – 8 p.m.
+                        </li>
+                        <li>
+                            <strong>Saturday:</strong> 8 a.m. – 6 p.m.
+                        </li>
+                        <li>
+                            <strong>Sunday:</strong> Closed
+                        </li>
+                    </ul>
+                </section>
+                <div class="social-links">
+                    <p>Follow us on social media:</p>
+                    <div class="social-icons">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📸 Instagram</a>
+                        <a href="#">❌ X (Twitter)</a>
+                        <a href="#">🎵 TikTok</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
     Subscribe to our newsletter: </p>
-<form>
-<input placeholder="Your email" style="max-width: 300px; width: 100%;" type="email">
-<button type="submit">
+            <form>
+                <input placeholder="Your email" style="max-width: 300px; width: 100%;" type="email"/>
+                <button type="submit">
                     Subscribe
 </button>
-</input></form>
-<p>
+            </form>
+            <p>
     © 2025 ABC Fitness Studio. All rights reserved. </p>
-</footer>
-<script>
+        </footer>
+        <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Add to Cart (Shop Page)
     const buttons = document.querySelectorAll(".product-card button");
@@ -112,26 +125,11 @@
       if (emailInput && messageBox) {
         form.addEventListener("submit", function (e) {
           e.preventDefault();
-
-          const nameInput = form.querySelector('input[name="name"]');
-          const name = nameInput ? nameInput.value.trim() : "";
-          const email = emailInput.value.trim();
-          const message = messageBox.value.trim();
-
-          if (!name || !email || !message) {
-            alert("⚠️ Please fill out all fields before submitting.");
-            return;
-          }
-
-          const formData = { name, email, message };
-          localStorage.setItem("contactFormSubmission", JSON.stringify(formData));
-          alert("📩 Thank you for your message!");
-
-          form.reset();
+          alert("📩 Thank you for reaching out! We'll get back to you soon.");
         });
       }
     });
   });
 </script>
-</body>
+    </body>
 </html>
