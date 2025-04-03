@@ -165,14 +165,7 @@
         <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Add to Cart (Shop Page)
-    const buttons = document.querySelectorAll(".product-card button");
-    buttons.forEach(button => {
-      button.addEventListener("click", function () {
-        alert("🛒 Item has been added to your cart!");
-      });
-    });
-
-    // Newsletter Form (Footer)
+      // Newsletter Form (Footer)
     const allForms = document.querySelectorAll("form");
     allForms.forEach(form => {
       const emailInput = form.querySelector('input[type="email"]');
