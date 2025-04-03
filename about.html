@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <title>
-            About Us
+            About Us - ABC Fitness Studio
 </title>
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
         <link href="styles.css" rel="stylesheet"/>
@@ -15,24 +15,19 @@
     ABC Fitness Studio </h1>
             <nav>
                 <ul>
-                    <li>
-                        <a href="index.html">
+                    <li><a href="index.html">
        Home </a>
                     </li>
-                    <li>
-                        <a href="about.html">
+                    <li><a href="about.html">
        About Us </a>
                     </li>
-                    <li>
-                        <a href="instructors.html">
+                    <li><a href="instructors.html">
        Instructors </a>
                     </li>
-                    <li>
-                        <a href="classes.html">
+                    <li><a href="classes.html">
        Classes </a>
                     </li>
-                    <li>
-                        <a href="shop.html">
+                    <li><a href="shop.html">
        Shop </a>
                     </li>
                 </ul>
@@ -67,7 +62,11 @@
                 </form>
                 <div class="social-links">
                     <p>Follow us on social media:</p>
-                    <div class="social-icons"><a href="#">📘 Facebook</a><a href="#">📸 Instagram</a><a href="#">❌ X (Twitter)</a><a href="#">🎵 TikTok</a>
+                    <div class="social-icons">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📸 Instagram</a>
+                        <a href="#">❌ X (Twitter)</a>
+                        <a href="#">🎵 TikTok</a>
                     </div>
                 </div>
             </section>
@@ -84,5 +83,39 @@
             <p>
     © 2025 ABC Fitness Studio. All rights reserved. </p>
         </footer>
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Add to Cart (Shop Page)
+    const buttons = document.querySelectorAll(".product-card button");
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        alert("🛒 Item has been added to your cart!");
+      });
+    });
+
+    // Newsletter Form (Footer)
+    const allForms = document.querySelectorAll("form");
+    allForms.forEach(form => {
+      const emailInput = form.querySelector('input[type="email"]');
+      const messageBox = form.querySelector('textarea');
+
+      // Newsletter (no textarea present)
+      if (emailInput && !messageBox) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("✅ Thank you for subscribing!");
+        });
+      }
+
+      // Contact form (has textarea)
+      if (emailInput && messageBox) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("📩 Thank you for reaching out! We'll get back to you soon.");
+        });
+      }
+    });
+  });
+</script>
     </body>
 </html>

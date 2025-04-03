@@ -1,123 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Homepage
-  </title>
-  <link href="css/theme.css" rel="stylesheet" type="text/css"/>
-  <link href="styles.css" rel="stylesheet"/>
- </head>
- <body>
-  <header>
-   <h1>
-    ABC Fitness Studio
-   </h1>
-   <nav>
-    <ul>
-     <li>
-      <a href="index.html">
-       Home
-      </a>
-     </li>
-     <li>
-      <a href="about.html">
-       About Us
-      </a>
-     </li>
-     <li>
-      <a href="instructors.html">
-       Instructors
-      </a>
-     </li>
-     <li>
-      <a href="classes.html">
-       Classes
-      </a>
-     </li>
-     <li>
-      <a href="shop.html">
-       Shop
-      </a>
-     </li>
-    </ul>
-   </nav>
-  </header>
-  <main class="container">
-   <h2>
-    Meet Our Instructors
-   </h2>
-   <section class="instructor-block">
-    <h3>
-     Lena M.
-    </h3>
-    <p>
-     Certified yoga instructor with 10+ years of experience. Specializes in Vinyasa and mindfulness practices.
-    </p>
-   </section>
-   <section class="instructor-block">
-    <h3>
-     Chris J.
-    </h3>
-    <p>
-     Group fitness leader and certified kickboxing coach known for high-energy, motivating classes.
-    </p>
-   </section>
-   <section class="instructor-block">
-    <h3>
-     Zoe L.
-    </h3>
-    <p>
-     Yoga and meditation expert passionate about mental clarity and physical alignment.
-    </p>
-   </section>
-   <section class="instructor-block">
-    <h3>
-     Kim S.
-    </h3>
-    <p>
-     Pilates and core specialist who focuses on posture, breathwork, and gentle strength-building.
-    </p>
-   </section>
-   <section class="instructor-block">
-    <h3>
-     Dana C.
-    </h3>
-    <p>
-     Dynamic Pilates coach with a creative approach to full-body sculpting and control.
-    </p>
-   </section>
-   <section class="instructor-block">
-    <h3>
-     Marcus B.
-    </h3>
-    <p>
-     Former competitive athlete and strength coach who brings intensity and focus to kickboxing and conditioning.
-    </p>
-   </section>
-   <section class="instructor-block">
-    <h3>
-     Alex T.
-    </h3>
-    <p>
-     Yoga practitioner blending traditional flow with athletic mobility training for all levels.
-    </p>
-   </section>
-  </main>
-  <footer>
-   <p>
-    Subscribe to our newsletter:
-   </p>
-   <form>
-    <input placeholder="Your email" style="max-width: 300px; width: 100%;" type="email"/>
-    <button type="submit">
-     Subscribe
-    </button>
-   </form>
-   <p>
-    © 2025 ABC Fitness Studio. All rights reserved.
-   </p>
-  </footer>
- </body>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Instructors - ABC Fitness Studio
+</title>
+        <link href="css/theme.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>
+    ABC Fitness Studio </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+       Home </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+       About Us </a>
+                    </li>
+                    <li>
+                        <a href="instructors.html">
+       Instructors </a>
+                    </li>
+                    <li>
+                        <a href="classes.html">
+       Classes </a>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+       Shop </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <h2>
+    Meet Our Instructors </h2>
+            <section class="instructor-block">
+                <h3>
+     Lena M. </h3>
+                <p>
+     Certified yoga instructor with 10+ years of experience. Specializes in Vinyasa and mindfulness practices. </p>
+            </section>
+            <section class="instructor-block">
+                <h3>
+     Chris J. </h3>
+                <p>
+     Group fitness leader and certified kickboxing coach known for high-energy, motivating classes. </p>
+            </section>
+            <section class="instructor-block">
+                <h3>
+     Zoe L. </h3>
+                <p>
+     Yoga and meditation expert passionate about mental clarity and physical alignment. </p>
+            </section>
+            <section class="instructor-block">
+                <h3>
+     Kim S. </h3>
+                <p>
+     Pilates and core specialist who focuses on posture, breathwork, and gentle strength-building. </p>
+            </section>
+            <section class="instructor-block">
+                <h3>
+     Dana C. </h3>
+                <p>
+     Dynamic Pilates coach with a creative approach to full-body sculpting and control. </p>
+            </section>
+            <section class="instructor-block">
+                <h3>
+     Marcus B. </h3>
+                <p>
+     Former competitive athlete and strength coach who brings intensity and focus to kickboxing and conditioning. </p>
+            </section>
+            <section class="instructor-block">
+                <h3>
+     Alex T. </h3>
+                <p>
+     Yoga practitioner blending traditional flow with athletic mobility training for all levels. </p>
+            </section>
+        </main>
+        <footer>
+            <p>
+    Subscribe to our newsletter: </p>
+            <form>
+                <input placeholder="Your email" style="max-width: 300px; width: 100%;" type="email"/>
+                <button type="submit">
+                    Subscribe
+</button>
+            </form>
+            <p>
+    © 2025 ABC Fitness Studio. All rights reserved. </p>
+        </footer>
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Add to Cart (Shop Page)
+    const buttons = document.querySelectorAll(".product-card button");
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        alert("🛒 Item has been added to your cart!");
+      });
+    });
+
+    // Newsletter Form (Footer)
+    const allForms = document.querySelectorAll("form");
+    allForms.forEach(form => {
+      const emailInput = form.querySelector('input[type="email"]');
+      const messageBox = form.querySelector('textarea');
+
+      // Newsletter (no textarea present)
+      if (emailInput && !messageBox) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("✅ Thank you for subscribing!");
+        });
+      }
+
+      // Contact form (has textarea)
+      if (emailInput && messageBox) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("📩 Thank you for reaching out! We'll get back to you soon.");
+        });
+      }
+    });
+  });
+</script>
+    </body>
 </html>
