@@ -333,3 +333,29 @@ section {
     padding: 0 1em;
   }
 }
+
+.service-block {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 2em;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .service-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .service-block img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .service-block p {
+    padding: 0 1em;
+  }
+}
