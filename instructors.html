@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Instructors - ABC Fitness Studio</title>
-        <link href="css/theme.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="styles.css"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Instructors - ABC Fitness Studio
+</title>
+        <link href="css/theme.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet"/>
     </head>
     <body>
         <header>
-            <h1>ABC Fitness Studio</h1>
+            <h1>
+    ABC Fitness Studio </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+       Home </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+       About Us </a>
+                    </li>
+                    <li>
+                        <a href="instructors.html">
+       Instructors </a>
+                    </li>
+                    <li>
+                        <a href="classes.html">
+       Classes </a>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+       Shop </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="about.html">About Us</a>
-                </li>
-                <li><a href="instructors.html">Instructors</a>
-                </li>
-                <li><a href="classes.html">Classes</a>
-                </li>
-                <li><a href="shop.html">Shop</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <h2>Meet Our Instructors</h2>
+        <main class="container">
+            <h2>
+    Meet Our Instructors </h2>
             <section class="instructor-block">
-                <img src="images/Lena_M.png" alt="Instructor portrait" class="instructor-img"/>
-                <div>
-                    <h3>Lena M.</h3>
-                    <p>Certified yoga instructor with 10+ years of experience. Specializes in Vinyasa and mindfulness practices.</p>
-                </div>
+                <h3>
+     Lena M. </h3>
+                <p>
+     Certified yoga instructor with 10+ years of experience. Specializes in Vinyasa and mindfulness practices. </p>
             </section>
             <section class="instructor-block">
-                <img src="images/Marcus_B.png" alt="Instructor portrait" class="instructor-img"/>
-                <div>
-                    <h3>Marcus B.</h3>
-                    <p>Enthusiastic kickboxing coach known for high-energy workouts and motivational coaching style.</p>
-                </div>
+                <h3>
+     Chris J. </h3>
+                <p>
+     Group fitness leader and certified kickboxing coach known for high-energy, motivating classes. </p>
             </section>
             <section class="instructor-block">
-                <img src="images/Dana_C.png" alt="Instructor portrait" class="instructor-img"/>
-                <div>
-                    <h3>Dana C.</h3>
-                    <p>Pilates expert focused on form, flexibility, and strength training with a calming presence in class.</p>
-                </div>
+                <h3>
+     Zoe L. </h3>
+                <p>
+     Yoga and meditation expert passionate about mental clarity and physical alignment. </p>
             </section>
             <section class="instructor-block">
-                <img src="images/Alex_T.png" alt="Instructor portrait" class="instructor-img"/>
-                <div>
-                    <h3>Alex T.</h3>
-                    <p>Energetic group fitness instructor leading both yoga and cardio sessions. Always brings the fun.</p>
-                </div>
+                <h3>
+     Kim S. </h3>
+                <p>
+     Pilates and core specialist who focuses on posture, breathwork, and gentle strength-building. </p>
             </section>
             <section class="instructor-block">
-                <img src="images/Kim_S.png" alt="Instructor portrait" class="instructor-img"/>
-                <div>
-                    <h3>Kim S.</h3>
-                    <p>Gentle yoga and restorative coach who helps students de-stress and recover through calm movement.</p>
-                </div>
+                <h3>
+     Dana C. </h3>
+                <p>
+     Dynamic Pilates coach with a creative approach to full-body sculpting and control. </p>
             </section>
             <section class="instructor-block">
-                <img src="images/Chris_J.png" alt="Instructor portrait" class="instructor-img"/>
-                <div>
-                    <h3>Chris J.</h3>
-                    <p>Kickboxing and circuit training instructor with a passion for pushing limits and building endurance.</p>
-                </div>
+                <h3>
+     Marcus B. </h3>
+                <p>
+     Former competitive athlete and strength coach who brings intensity and focus to kickboxing and conditioning. </p>
             </section>
             <section class="instructor-block">
-                <img src="images/Zoe_L.png" alt="Instructor portrait" class="instructor-img"/>
-                <div>
-                    <h3>Zoe L.</h3>
-                    <p>Mat Pilates coach with a focus on posture correction, strength, and flexibility for all levels.</p>
-                </div>
+                <h3>
+     Alex T. </h3>
+                <p>
+     Yoga practitioner blending traditional flow with athletic mobility training for all levels. </p>
             </section>
         </main>
         <footer>
             <p>
     Subscribe to our newsletter: </p>
             <form>
-                <input placeholder="Your email" style="max-width: 300px; width: 100%;" type="email" required/>
+                <input placeholder="Your email" style="max-width: 300px; width: 100%;" type="email"/>
                 <button type="submit">
                     Subscribe
 </button>
@@ -89,5 +96,39 @@
             <p>
     © 2025 ABC Fitness Studio. All rights reserved. </p>
         </footer>
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Add to Cart (Shop Page)
+    const buttons = document.querySelectorAll(".product-card button");
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        alert("🛒 Item has been added to your cart!");
+      });
+    });
+
+    // Newsletter Form (Footer)
+    const allForms = document.querySelectorAll("form");
+    allForms.forEach(form => {
+      const emailInput = form.querySelector('input[type="email"]');
+      const messageBox = form.querySelector('textarea');
+
+      // Newsletter (no textarea present)
+      if (emailInput && !messageBox) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("✅ Thank you for subscribing!");
+        });
+      }
+
+      // Contact form (has textarea)
+      if (emailInput && messageBox) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("📩 Thank you for reaching out! We'll get back to you soon.");
+        });
+      }
+    });
+  });
+</script>
     </body>
 </html>
