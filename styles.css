@@ -533,3 +533,21 @@ section {
     margin: 0 auto 10px;
     display: block;
 }
+
+.instructor-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #fcfcfc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.instructor-block img.instructor-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
